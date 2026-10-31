@@ -1,0 +1,196 @@
+{
+  "events": {
+    "$append": [
+      {
+        "id": "prigozhin_fork_mironov_investigation",
+        "title": {
+          "ru": "Проверки УФСБ и губернатора Миронова в Туношне",
+          "en": "FSB and Governor Mironov Inquiries in Tunoshna"
+        },
+        "text": {
+          "ru": "Губернатор Ярославской области Дмитрий Миронов выражает недовольство постоянным присутствием вооружённых людей и полевых лагерей теневой ЧВК в селе Туношна. Силовики начали проверку землепользования и ночных вылетов транспортных бортов с аэродрома Туношна.",
+          "en": "Governor Dmitry Mironov initiates regulatory inquiries into secret military flights and PMC installations at Tunoshna."
+        },
+        "conditions": {
+          "country": "Народный Фронт Возрождения",
+          "flag": "prigozhin_fork_hq_built",
+          "missing_flag": "prigozhin_fork_mironov_seen"
+        },
+        "шанс_v_year": 0.8,
+        "times": 1,
+        "options": [
+          {
+            "text": {
+              "ru": "Подключить кремлёвские связи и осадить региональные структуры",
+              "en": "Mobilize presidential administration contacts to halt inquiries"
+            },
+            "effects": {
+              "flag": "prigozhin_fork_mironov_seen"
+            }
+          },
+          {
+            "text": {
+              "ru": "Договориться с губернатором: инвестиции в регион в обмен на аэродром",
+              "en": "Negotiate mutual concessions: regional investments for flight clearance"
+            },
+            "effects": {
+              "flag": "prigozhin_fork_mironov_seen"
+            }
+          },
+          {
+            "text": {
+              "ru": "Вскрыть коррупцию чиновников области через сетку военкоров в Telegram",
+              "en": "Expose regional corruption via Telegram correspondent channels"
+            },
+            "effects": {
+              "flag": "prigozhin_fork_mironov_seen"
+            }
+          }
+        ]
+      },
+      {
+        "id": "prigozhin_fork_rival_syria_clash",
+        "title": {
+          "ru": "Теневая война в Сирии: столкновение с ЧВК «Редут»",
+          "en": "Shadow War in Syria: Clash with Redut PMC"
+        },
+        "text": {
+          "ru": "Конкурирующая военная компания «Редут» при негласной поддержке армейских генералов попыталась перехватить охрану газовых полей в провинции Хомс. Штурмовые отряды Вагнера готовы к силовому ответу.",
+          "en": "Rival PMC Redut attempts to usurp gas field security contracts in Homs. Wagner assault teams await orders."
+        },
+        "conditions": {
+          "country": "Народный Фронт Возрождения",
+          "flag": "prigozhin_fork_hq_built",
+          "missing_flag": "prigozhin_fork_syria_clash_seen"
+        },
+        "шанс_v_year": 0.7,
+        "times": 1,
+        "options": [
+          {
+            "text": {
+              "ru": "Жестко выбить «Редут» с объектов: поля остаются под Вагнером (+10 млн $)",
+              "en": "Forcefully expel Redut: fields remain secured (+10M $)"
+            },
+            "effects": {
+              "money": 10,
+              "flag": "prigozhin_fork_syria_clash_seen"
+            }
+          },
+          {
+            "text": {
+              "ru": "Разделить сектора через Дамаск и сосредоточиться на приисках в Африке",
+              "en": "Partition sectors through Damascus and pivot focus to African gold"
+            },
+            "effects": {
+              "flag": "prigozhin_fork_syria_clash_seen"
+            }
+          }
+        ]
+      },
+      {
+        "id": "prigozhin_fork_duma_election_day",
+        "title": {
+          "ru": "Выборы в Государственную думу: триумф НФВ!",
+          "en": "State Duma Elections: NFW Triumph!"
+        },
+        "text": {
+          "ru": "Осень 2019 года. День голосования на выборах в Государственную думу. Партия «Народный Фронт Возрождения» (НФВ) подходит к подведению итогов. Исход выборов зависит от баланса ресурсов, медийного прикрытия и готовности кремлёвских институтов терпеть третью силу в парламенте.",
+          "en": "Autumn 2019. Duma Election Day. The outcome for NFW hangs in the balance between campaign investments, media coverage, and administrative resistance."
+        },
+        "conditions": {
+          "country": "Народный Фронт Возрождения",
+          "flag": "prigozhin_fork_duma_campaign",
+          "missing_flag": "prigozhin_fork_duma_vote_done"
+        },
+        "шанс_v_year": 1.0,
+        "times": 1,
+        "options": [
+          {
+            "text": {
+              "ru": "Триумфальный прорыв: опора на ветеранов и жесткую агитацию (24% голосов, 108 мест)",
+              "en": "Triumphant breakthrough: veteran support and hard campaign (24% votes, 108 seats)"
+            },
+            "conditions": {
+              "flag": "prigozhin_fork_duma_campaign",
+              "money": {
+                "не_меньше": 3
+              }
+            },
+            "effects": {
+              "money": -3,
+              "flag": "prigozhin_fork_duma_vote_done",
+              "chronicle": {
+                "text": {
+                  "ru": "НФВ триумфально проходит в Госдуму, взяв 24% мандатов.",
+                  "en": "NFW captures 24% of seats in the State Duma."
+                },
+                "tone": "good"
+              }
+            }
+          },
+          {
+            "text": {
+              "ru": "Умеренный компромисс: преодолеть 5% барьер без открытой конфронтации (8% голосов, 36 мест)",
+              "en": "Moderate compromise: overcome 5% barrier without overt crisis (8% votes, 36 seats)"
+            },
+            "effects": {
+              "flag": "prigozhin_fork_duma_vote_done",
+              "chronicle": {
+                "text": {
+                  "ru": "НФВ проходит в Госдуму с умеренной фракцией (8% мест).",
+                  "en": "NFW enters the Duma with a moderate faction (8% of seats)."
+                },
+                "tone": "neutral"
+              }
+            }
+          },
+          {
+            "text": {
+              "ru": "Административный блок: ЦИК бракует подписи, НФВ уходит в уличную и теневую борьбу",
+              "en": "Administrative block: registration revoked, shifting to non-parliamentary struggle"
+            },
+            "effects": {
+              "flag": "prigozhin_fork_duma_vote_done",
+              "chronicle": {
+                "text": {
+                  "ru": "Списки НФВ заблокированы ЦИК. Партия осталась вне парламента.",
+                  "en": "NFW ballot blocked by election authorities. Party remains outside parliament."
+                },
+                "tone": "bad"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "prigozhin_fork_duma_cancellation",
+        "title": {
+          "ru": "Кремль: регулярный электоральный цикл сохранён",
+          "en": "Kremlin: Regular Electoral Cycle Maintained"
+        },
+        "text": {
+          "ru": "Администрация Президента оценила внутриполитические риски. Досрочный роспуск Государственной думы в 2019 году признан нецелесообразным. Парламент отработает полный пятилетний срок до сентября 2021 года. Политическим силам предложено сосредоточиться на региональных выборах и партийном строительстве.",
+          "en": "The Kremlin decided against early dissolution. Elections will proceed as scheduled in September 2021."
+        },
+        "conditions": {
+          "country": "Народный Фронт Возрождения",
+          "flag": "prigozhin_fork_elections_cancelled",
+          "missing_flag": "prigozhin_fork_cancellation_seen"
+        },
+        "шанс_v_year": 1.0,
+        "times": 1,
+        "options": [
+          {
+            "text": {
+              "ru": "Переориентироваться на долгосрочные региональные выборы и бизнес",
+              "en": "Pivot to regional elections and business expansion"
+            },
+            "effects": {
+              "flag": "prigozhin_fork_cancellation_seen"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

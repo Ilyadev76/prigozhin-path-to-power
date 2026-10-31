@@ -1,0 +1,51 @@
+{
+  "$schema": "../../docs/modding/schemas/mod.schema.json",
+  "api": 1.0,
+  "authors": [
+    "Likoe"
+  ],
+  "depends": [],
+  "description": {
+    "ru": "Отдельный форк на базе Pax Universe 0.32.11. Лор: Россия, 1 сентября 2018 года; бизнес Пригожина, формирование НФВ и ЧВК. Перенесена текущая разработка мода; игровые проверки и переработка продолжаются.",
+    "en": "A separate fork based on Pax Universe 0.32.11. Russia, September 1, 2018: Prigozhin business, the emerging NFW and PMC operations. Current mod development has been carried over; gameplay validation and rework remain in progress."
+  },
+  "entry": "main.gd",
+  "game_version": ">=0.32.11",
+  "id": "prigozhin_fork",
+  "load_after": [],
+  "replaces": {
+    "order_evaluation": [
+      "_accept_request"
+    ],
+    "order_execution": [
+      "execute"
+    ],
+    "rewind": [
+      "_order_status_report"
+    ],
+    "treasury": [
+      "breakdown"
+    ]
+  },
+  "name": {
+    "ru": "Пригожин: путь к власти",
+    "en": "Prigozhin: Path to Power"
+  },
+  "tags": [
+    "overhaul",
+    "events",
+    "ui"
+  ],
+  "version": "0.1.2",
+  "fork": {
+    "game": "0.32.11",
+    "base": "game",
+    "keep": [],
+    "saves": "own",
+    "accepts": [],
+    "ai": "any"
+  },
+  "conflicts": [
+    "prigozhin"
+  ]
+}

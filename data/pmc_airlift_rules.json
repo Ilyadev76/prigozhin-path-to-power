@@ -1,0 +1,13 @@
+{
+  "loading_days": 2,
+  "km_per_day": 6000,
+  "personnel_per_aircraft": 120,
+  "max_concurrent_aircraft": 4,
+  "fee_per_aircraft": 0.2,
+  "return_reserve_ratio": 1.0,
+  "cargo_aircraft_per_item": {
+    "vehicles": 1,
+    "trucks": 1,
+    "tanks": 1
+  }
+}

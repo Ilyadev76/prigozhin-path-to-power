@@ -1,0 +1,6 @@
+{
+  "initial_candidates": 300,
+  "candidates_per_period": 150,
+  "period_days": 30,
+  "max_waiting_candidates": 1200
+}

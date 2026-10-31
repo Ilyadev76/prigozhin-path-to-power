@@ -1,0 +1,17 @@
+.godot/
+.codebase-memory/
+.agents/
+.codex/
+__pycache__/
+*.log
+*.stderr.txt
+*.stdout.txt
+*.zip
+*.paxmod
+.env
+.env.*
+agent_bridge.json
+settings.json
+account.json
+auth.json
+license.json
